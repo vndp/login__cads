@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel fruto regional</title>
+    <link rel="stylesheet" href="/pagina_principal/styles.css">
+    <link rel="stylesheet" href="/login__cads/css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Hotel Fruto regional</h1>
+        <a href="/login__cads/login_cadastro.html"> Fazer Login / Cadastro </a>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Minhas Reservas</a></li>
+                <li><a href="#">Favoritos</a></li>
+                <li><a href="#">Gerenciamento</a></li>
+                <li><a href="#">Relatórios</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div class="container">
+            <div class="content first-content">
+                <div class="first-column">
+                    <a href="/pagina_principal/index.html"> Voltar a tela inicial </a>
+                    <h2 class="title title-primary">Bem-vindo(a) de Volta!</h2>
+                    <p class="description description-primary">Continue conectado conosco</p>
+                    <p class="description description-primary">Por favor, faça login com suas informações pessoais</p>
+                    <button id="signin" class="btn btn-primary">Entrar</button>
+                </div>    
+                <div class="second-column">
+                    <h2 class="title title-second">Crie sua conta!</h2>
+                    <div class="social-media">
+                        <ul class="list-social-media">
+                            <a class="link-social-media" href="#">
+                                <li class="item-social-media">
+                                    <i class="fab fa-facebook-f"></i>        
+                                </li>
+                            </a>
+                            <a class="link-social-media" href="#">
+                                <li class="item-social-media">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </li>
+                            </a>
+                            <a class="link-social-media" href="#">
+                                <li class="item-social-media">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div><!-- social media -->
+                    <p class="description description-second">Ou use seu e-mail</p>
+                    <form class="form">
+                        <label class="label-input" for="">
+                            <i class="fa-solid fa-user icon-modify"></i>
+                            <input type="text" placeholder="Nome">
+                        </label>     
+                        <label class="label-input" for="">
+                            <i class="fa-solid fa-envelope icon-modify"></i>
+                            <input type="email" placeholder="Email">
+                        </label>       
+                        <label class="label-input" for="">
+                            <i class="fa-solid fa-lock icon-modify"></i>
+                            <input type="password" placeholder="Senha">
+                        </label>
+                            <button class="btn btn-second">Criar</button>
+                        
+                    </form>
+                </div> <!-- second column -->
+            </div> <!-- first content -->
+            
+            <div class="content second-content">
+                <div class="first-column">
+                    <h2 class="title title-primary">Olá, amigo!</h2>
+                    <p class="description description-primary">Ainda não tem conta? Insira seus dados pessoais</p>
+                    <p class="description description-primary">e comece sua jornada!</p>
+                    <button id="signup" class="btn btn-primary">Entrar</button>
+                </div>
+                <div class="second-column">
+                    <h2 class="title title-second">Conecte em sua Conta</h2>
+                    <div class="social-media">
+                        <ul class="list-social-media">
+                            <a class="link-social-media" href="#">
+                                <li class="item-social-media">
+                                    <i class="fab fa-facebook-f"></i>        
+                                </li>
+                            </a>
+                            <a class="link-social-media" href="#">
+                                <li class="item-social-media">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </li>
+                            </a>
+                            <a class="link-social-media" href="#">
+                                <li class="item-social-media">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div><!-- social media -->
+                    <p class="description description-second">Ou use seu e-mail</p>
+                    <form class="form">
+                        <label class="label-input" for="">
+                            <i class="fa-solid fa-envelope icon-modify"></i>
+                            <input type="email" placeholder="Email">
+                        </label>   
+    
+                        <label class="label-input" for="">
+                            <i class="fa-solid fa-lock icon-modify"></i>
+                            <input type="password" placeholder="Senha">
+                        </label>
+                        <a class="password" href="#">Esqueceu a senha?</a>
+                            <button class="btn btn-second">Entrar</button>       
+                    </form>
+                </div><!-- second column -->
+            </div> <!-- second content -->
+        </div>
+        <script src="/pagina_principal/script.js"></script>
+    </body>
+    <main>
+    
+        <section id="filtros">
+            <h2>Buscar Quartos</h2>
+            <form>
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria">
+                    <option value="solteiro">Solteiro</option>
+                    <option value="casal">Casal</option>
+                    <option value="familia">Família</option>
+                </select>
+
+                <label for="checkin">Check-in:</label>
+                <input type="date" id="checkin" name="checkin">
+
+                <label for="checkout">Check-out:</label>
+                <input type="date" id="checkout" name="checkout">
+
+                <button type="submit">Filtrar</button>
+            </form>
+        </section>
+
+        <section id="quartos">
+            <h2>Quartos Disponíveis</h2>
+            <div class="quarto">
+                <img src="quartos/images.jpg" alt="">
+                <h3>Quarto Solteiro</h3>
+                <p>Com uma cama aconchegante, mesa de trabalho e Wi-Fi gratuito, é perfeito para quem busca uma estadia tranquila. Além disso, conta com ar-condicionado, TV a cabo.</p>
+                <button>Reservar</button>
+            </div>
+            <div class="quarto">
+                <img src="quartos/images2.jpg" alt="">
+                <h3>Quarto Casal</h3>
+                <p>O quarto conta com TV de tela plana, frigobar, ar-condicionado e banheiro privativo. Uma excelente opção para quem busca conforto e privacidade.</p>
+                <button>Reservar</button>
+            </div>
+            <div class="quarto">
+                <img src="quartos/images3.jpg" alt="">
+                <h3>Quarto familia</h3>
+                <p>O ambiente é climatizado, possui TV, frigobar e um banheiro amplo. Oferece opções de entretenimento que tornam a estadia ainda mais agradável para todos.</p>
+                <button>Reservar</button>
+            </div>
+        </section>
+        <div class="hotel-card">
+            <img src="hotéis/hotel-fasano-rj.jpeg" alt="Nome do Hotel">
+            <h3>Holiday Inn Parque Anhembi</h3>
+            <p><strong>8.7 - Excelente</strong> (13.647) 📍 São Paulo, Brasil</p>
+            
+            <div class="desconto">
+                <span class="percentual">10%</span>
+                <span>mais barato que o normal</span>
+            </div>
+        
+            <p><strong>Outrip</strong> ✅ Cancelamento gratuito</p>
+            <p class="preco">R$ 545 <span>por diária</span></p>
+            <p>11 de abr. - 12 de abr.</p>
+        
+            <button class="btn-oferta">Conferir oferta</button>
+        </div>
+
+        <div class="hotel-card">
+            <img src="hotéis/LAJ_05_LAJE_ROOFTOP_1.jpg" alt="Nome do Hotel">
+            <h3>Holiday Inn Parque Anhembi</h3>
+            <p><strong>8.7 - Excelente</strong> (13.647) 📍 São Paulo, Brasil</p>
+            
+            <div class="desconto">
+                <span class="percentual">10%</span>
+                <span>mais barato que o normal</span>
+            </div>
+        
+            <p><strong>Outrip</strong> ✅ Cancelamento gratuito</p>
+            <p class="preco">R$ 545 <span>por diária</span></p>
+            <p>11 de abr. - 12 de abr.</p>
+        
+            <button class="btn-oferta">Conferir oferta</button>
+        </div>
+
+        <div class="hotel-card">
+            <img src="hotéis/KENOA-by-Fernando.26-scaled.jpg" alt="Nome do Hotel">
+            <h3>Holiday Inn Parque Anhembi</h3>
+            <p><strong>8.7 - Excelente</strong> (13.647) 📍 São Paulo, Brasil</p>
+            
+            <div class="desconto">
+                <span class="percentual">10%</span>
+                <span>mais barato que o normal</span>
+            </div>
+        
+            <p><strong>Outrip</strong> ✅ Cancelamento gratuito</p>
+            <p class="preco">R$ 545 <span>por diária</span></p>
+            <p>11 de abr. - 12 de abr.</p>
+        
+            <button class="btn-oferta">Conferir oferta</button>
+        </div>
+
+        <div class="destinos-container">
+            <h2>Encontre as melhores datas para reservar a sua próxima estadia</h2>
+            <div class="abas">
+                <button class="aba ativa" onclick="mostrarPrecos('rio')">Rio de Janeiro</button>
+                <button class="aba" onclick="mostrarPrecos('sp')">São Paulo</button>
+                <button class="aba" onclick="mostrarPrecos('gramado')">Gramado</button>
+            </div>
+            <div id="precos-rio" class="precos ativo">
+                <p>Fevereiro: R$ 235 - R$ 865</p>
+                <p>Março: R$ 240 - R$ 835</p>
+                <p>Abril: R$ 245 - R$ 755</p>
+            </div>
+            <div id="precos-sp" class="precos">
+                <p>Fevereiro: R$ 200 - R$ 700</p>
+                <p>Março: R$ 210 - R$ 750</p>
+                <p>Abril: R$ 220 - R$ 780</p>
+            </div>
+            <div id="precos-gramado" class="precos">
+                <p>Fevereiro: R$ 280 - R$ 900</p>
+                <p>Março: R$ 270 - R$ 880</p>
+                <p>Abril: R$ 260 - R$ 860</p>
+            </div>
+        </div>
+
+        
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Reservas de Hotel</p>
+    </footer>
+</body>
+</html>

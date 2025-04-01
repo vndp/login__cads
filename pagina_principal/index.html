@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hotel fruto regional</title>
-    <link rel="stylesheet" href="/pagina_principal/styles.css">
-    <link rel="stylesheet" href="/login__cads/css/style.css">
+    <link rel="stylesheet" href="/Trabalho/styles.css/styles_Init.css">
+    <link rel="stylesheet" href="/Trabalho/styles.css/styles_log_cad.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+    <link rel="stylesheet" href="/Trabalho/pagina_principal/styles.css">
 
 </head>
 <body>
     <header>
         <h1>Hotel Fruto regional</h1>
-        <a href="/login__cads/login_cadastro.html"> Fazer Login / Cadastro </a>
-        <nav>
+        <a  class="login"   href="/Trabalho/login__cads/login_cadastro.html""> Fazer Login / Cadastro </a>
+        <nav class="inicio">
             <ul>
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Minhas Reservas</a></li>
@@ -23,106 +27,8 @@
             </ul>
         </nav>
     </header>
-    <body>
-        <div class="container">
-            <div class="content first-content">
-                <div class="first-column">
-                    <a href="/pagina_principal/index.html"> Voltar a tela inicial </a>
-                    <h2 class="title title-primary">Bem-vindo(a) de Volta!</h2>
-                    <p class="description description-primary">Continue conectado conosco</p>
-                    <p class="description description-primary">Por favor, faça login com suas informações pessoais</p>
-                    <button id="signin" class="btn btn-primary">Entrar</button>
-                </div>    
-                <div class="second-column">
-                    <h2 class="title title-second">Crie sua conta!</h2>
-                    <div class="social-media">
-                        <ul class="list-social-media">
-                            <a class="link-social-media" href="#">
-                                <li class="item-social-media">
-                                    <i class="fab fa-facebook-f"></i>        
-                                </li>
-                            </a>
-                            <a class="link-social-media" href="#">
-                                <li class="item-social-media">
-                                    <i class="fab fa-google-plus-g"></i>
-                                </li>
-                            </a>
-                            <a class="link-social-media" href="#">
-                                <li class="item-social-media">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </li>
-                            </a>
-                        </ul>
-                    </div><!-- social media -->
-                    <p class="description description-second">Ou use seu e-mail</p>
-                    <form class="form">
-                        <label class="label-input" for="">
-                            <i class="fa-solid fa-user icon-modify"></i>
-                            <input type="text" placeholder="Nome">
-                        </label>     
-                        <label class="label-input" for="">
-                            <i class="fa-solid fa-envelope icon-modify"></i>
-                            <input type="email" placeholder="Email">
-                        </label>       
-                        <label class="label-input" for="">
-                            <i class="fa-solid fa-lock icon-modify"></i>
-                            <input type="password" placeholder="Senha">
-                        </label>
-                            <button class="btn btn-second">Criar</button>
-                        
-                    </form>
-                </div> <!-- second column -->
-            </div> <!-- first content -->
-            
-            <div class="content second-content">
-                <div class="first-column">
-                    <h2 class="title title-primary">Olá, amigo!</h2>
-                    <p class="description description-primary">Ainda não tem conta? Insira seus dados pessoais</p>
-                    <p class="description description-primary">e comece sua jornada!</p>
-                    <button id="signup" class="btn btn-primary">Entrar</button>
-                </div>
-                <div class="second-column">
-                    <h2 class="title title-second">Conecte em sua Conta</h2>
-                    <div class="social-media">
-                        <ul class="list-social-media">
-                            <a class="link-social-media" href="#">
-                                <li class="item-social-media">
-                                    <i class="fab fa-facebook-f"></i>        
-                                </li>
-                            </a>
-                            <a class="link-social-media" href="#">
-                                <li class="item-social-media">
-                                    <i class="fab fa-google-plus-g"></i>
-                                </li>
-                            </a>
-                            <a class="link-social-media" href="#">
-                                <li class="item-social-media">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </li>
-                            </a>
-                        </ul>
-                    </div><!-- social media -->
-                    <p class="description description-second">Ou use seu e-mail</p>
-                    <form class="form">
-                        <label class="label-input" for="">
-                            <i class="fa-solid fa-envelope icon-modify"></i>
-                            <input type="email" placeholder="Email">
-                        </label>   
-    
-                        <label class="label-input" for="">
-                            <i class="fa-solid fa-lock icon-modify"></i>
-                            <input type="password" placeholder="Senha">
-                        </label>
-                        <a class="password" href="#">Esqueceu a senha?</a>
-                            <button class="btn btn-second">Entrar</button>       
-                    </form>
-                </div><!-- second column -->
-            </div> <!-- second content -->
-        </div>
-        <script src="/pagina_principal/script.js"></script>
-    </body>
+   
     <main>
-    
         <section id="filtros">
             <h2>Buscar Quartos</h2>
             <form>
@@ -141,6 +47,19 @@
 
                 <button type="submit">Filtrar</button>
             </form>
+        </section>
+
+        <section id="carrossel">
+            <h2>Galeria de Fotos</h2>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="quartos/images.jpg" alt="Imagem 1">
+                    <img src="quartos/images2.jpg" alt="Imagem 2">
+                    <img src="quartos/images3.jpg" alt="Imagem 3">
+                </div>
+                <button class="prev" onclick="prevSlide()">❮</button>
+                <button class="next" onclick="nextSlide()">❯</button>
+            </div>
         </section>
 
         <section id="quartos">

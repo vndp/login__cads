@@ -10,6 +10,7 @@ btnSignup.addEventListener("click", function(){
     body.className = "sign-up-js";
 });
 
+
 function mostrarPrecos(cidade) {
     
     let abas = document.querySelectorAll('.aba');

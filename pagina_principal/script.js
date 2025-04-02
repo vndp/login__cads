@@ -1,15 +1,16 @@
 var btnSignin = document.querySelector("#signin");
 var btnSignup = document.querySelector("#signup");
-var body = document.querySelector("body");
+var body = document.querySelector(".container");
 
-btnSignin.addEventListener("click", function(){
-    body.className = "sign-in-js";
+/*log*/
+btnSignin.addEventListener("click", function () {
+   body.className = "container sign-in-js"; 
 });
 
-btnSignup.addEventListener("click", function(){
-    body.className = "sign-up-js";
-});
-
+/*cadst*/
+btnSignup.addEventListener("click", function () {
+    body.className = "container sign-up-js";
+})
 
 function mostrarPrecos(cidade) {
     

@@ -26,17 +26,17 @@ header {
 .inicio {
     position: absolute;
     right: 25px;
-    top: 6%;
+    top: 10%;
     transform: translateY(-50%);
     padding: 25px 20px;
     font-weight: bold;
-    left: 53%;
+    left: 50%;
 }
 
 .login {
     position: absolute;
     right: 20px;
-    top: 5%;
+    top: 10%;
     transform: translateY(-50%);
     background-color: #fff;
     padding: 10px 20px;
@@ -45,6 +45,18 @@ header {
     color: #9e5e29;
     font-weight: bold;
     z-index: 999;
+}
+.alinhartitulo {
+    display: flex;
+    align-items: center; 
+   
+}
+
+.title1{
+    font-size: 1.8rem;
+    font-weight: bold; 
+    color: #ffffff;   
+ 
 }
 nav ul {
     list-style: none;
@@ -107,21 +119,21 @@ nav ul li a {
 #filtros select, #filtros input {
     padding: 10px;
     margin: 5px;
-    border: 1px solid #164a11;
+    border: 1px solid #4a2f11;
     border-radius: 5px;
 }
 
 #filtros button {
-    background-color: #2E8B57;
+    background-color: #632014;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 #filtros button:hover {
-    background-color: #237A46;
+    background-color: #8f4b27;
 }
 
 /* Seção de Quartos */
@@ -132,7 +144,7 @@ nav ul li a {
 .quarto {
     display: inline-block;
     width: 250px;
-    background-color: #fff ;
+    background-color: #d3bfaa ;
     padding: 15px;
     margin: 10px;
     border-radius: 8px;
@@ -185,7 +197,7 @@ th {
 }
 
 td button {
-    background-color: #FF6347;
+    background-color: #632014;
     color: white;
     padding: 5px;
     border: none;
@@ -194,7 +206,7 @@ td button {
 }
 
 td button:hover {
-    background-color: #D43F28;
+    background-color: #bb3e2a;
 }
 
 /* Rodapé */
@@ -256,7 +268,7 @@ footer {
 
 .destinos-container {
     text-align: center;
-    background: #f4f4f4;
+    background: #c1c0c0;
     padding: 20px;
     border-radius: 10px;
 }
@@ -275,8 +287,8 @@ footer {
 }
 
 .aba.ativa {
-    background: #b74c0e;
-    color: white;
+    background: #ddd;
+    color: rgb(0, 0, 0);
 }
 
 .precos {

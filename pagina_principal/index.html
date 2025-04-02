@@ -14,7 +14,11 @@
 </head>
 <body>
     <header>
-        <h1>Hotel Fruto regional</h1>
+        <div class="alinhartitulo">
+        <img src="/Trabalho/pagina_principal/hotéis/Site Fruto Regional.png"  width="200"
+            height="100" alt="">
+        <h1 >Hotel Fruto regional</h1>
+        </div>
         <a  class="login"   href="/Trabalho/login__cads/login_cadastro.html""> Fazer Login / Cadastro </a>
         <nav class="inicio">
             <ul>
@@ -27,28 +31,24 @@
             </ul>
         </nav>
     </header>
-   
     <main>
         <section id="filtros">
             <h2>Buscar Quartos</h2>
             <form>
-                <label for="categoria">Categoria:</label>
+                <label for="categoria">Quartos:</label>
                 <select id="categoria" name="categoria">
                     <option value="solteiro">Solteiro</option>
                     <option value="casal">Casal</option>
                     <option value="familia">Família</option>
                 </select>
-
-                <label for="checkin">Check-in:</label>
+                <label for="checkin">Entrada:</label>
                 <input type="date" id="checkin" name="checkin">
 
-                <label for="checkout">Check-out:</label>
+                <label for="checkout">Saída:</label>
                 <input type="date" id="checkout" name="checkout">
-
                 <button type="submit">Filtrar</button>
             </form>
         </section>
-
         <section id="carrossel">
             <h2>Galeria de Fotos</h2>
             <div class="carousel">
@@ -61,7 +61,6 @@
                 <button class="next" onclick="nextSlide()">❯</button>
             </div>
         </section>
-
         <section id="quartos">
             <h2>Quartos Disponíveis</h2>
             <div class="quarto">

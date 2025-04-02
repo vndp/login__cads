@@ -13,20 +13,32 @@
     font-style: normal;
     font-variation-settings:"wdth" 100;
 }
-
+.bg_video{
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -1000;
+    background: url(images/nome-do-video.jpg) no-repeat;
+    background-size: cover; 
+}
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ecf0f1;
+    background-color: #ecf0f123;
+      
     
 }
 .content { 
     background-color: #fcfcfc;
     border-radius: 15px;
-    width: 970px;
-    height: 70%;
+    width: 960px;
+    height: 50%;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -34,7 +46,7 @@
 .content::before{
     content: "";
     position: absolute;
-    background-color: #58af9b;
+    background-color: #af6958;
     width: 40%;
     height: 100%;
     border-top-left-radius: 15px;
@@ -53,8 +65,27 @@
     color: #fff;
 }
 .title-second {
-    color: #58af9b;
+    color: #af6958;
 }
+.volta{
+    color: #ecf0f1;
+    position: absolute;
+    left: 20px;
+    top: 5%;
+}
+.fa-solid fa-arrow-left{
+    color: #ffff;
+     position: absolute;
+    left: 20px;
+    top: 5%;
+}
+a:link{
+    color: #ae4b0e;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+}
+
 .description {
     font-size: 14px;
     font-weight: 300;
@@ -87,17 +118,17 @@
 }
 .btn-primary:hover {
     background-color: #fff;
-    color: #58af9b;
+    color: #b25820;
 }
 .btn-second {
-    background-color: #58af9b;
-    border: 1px solid #58af9b;
+    background-color: #af6958;
+    border: 1px solid #af8558;
     transition: background-color .5s;
 }
 .btn-second:hover {
     background-color: #fff;
-    border: 1px solid #58af9b;
-    color: #58af9b; 
+    border: 1px solid #ae4b0e;
+    color: #b25820; 
 }
 .first-content {
     display: flex;
@@ -202,9 +233,12 @@ input:-webkit-autofill {
     z-index: -1;
 }
 
-.sign-in-js .second-content .first-column,
+
 .sign-in-js .second-content .second-column{
     z-index: 11;
+}
+.sign-in-js .second-content .first-column{
+    z-index: 13;
 }
 
 .sign-in-js .content::before{
@@ -213,6 +247,13 @@ input:-webkit-autofill {
     border-bottom-left-radius: 0;
     border-top-right-radius: 15px;
     border-bottom-right-radius:15px ;
+    animation: slidein 1.5s;
+
+    z-index: 12;
+
+}
+.sign-up-js .content::before {
+    animation: slideout 3s;
 }
 
 .sign-up-js .second-content .first-column,
@@ -224,3 +265,68 @@ input:-webkit-autofill {
     z-index: 11;
 }
 
+
+
+@keyframes slidein {
+    from{
+        left: 0;
+        width: 40%;;
+    }
+
+    25%{
+        left: 5%;
+        width: 50%;
+    }
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+    75%{
+        left: 45%;
+        width: 50%;
+    }
+
+    to{
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideout {
+    from{
+        left: 60%;
+        width: 40%;
+    }
+
+    25%{
+        left: 45%;
+        width: 50%;
+    }
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+    75%{
+        left: 5%;
+        width: 50%;
+    }
+
+    to{
+        left: 0;
+        width: 40%;
+       
+    }
+}
+
+/*responsividade de tela*/
+@media screen and (max-width: 1040px) {
+    .content{
+        width: 70%;
+        height: 70%;
+
+    }
+    .content::before{
+        
+    }
+    
+}
